@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Dois Números (Completo)</title>
+    
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            background-image: url(istockphoto-1293170628-612x612.jpg);
+           }
+        
+            
+
+        .container {
+            display: flex;
+            flex-direction: column; 
+            gap: 15px; 
+            width: 300px;
+            padding: 25px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="number"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #2563a5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+           
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #resultado {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            text-align: center;
+            border-left: 5px solid #007BFF;
+        }
+        h1{
+            color: #0d4d9c;
+            background-color: #fffefe;
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Calculadora Simples de Soma </h1>
+
+    <div class="container">
+        <input type="number" id="num1" placeholder="Digite o primeiro número">
+        
+        <input type="number" id="num2" placeholder="Digite o segundo número">
+        
+        <button onclick="somar()">Somar</button>
+        
+        <p id="resultado">Insira os números e clique em Somar.</p>
+    </div>
+
+    <script>
+        
+        function somar() {
+            
+            const inputNum1 = document.getElementById('num1').value;
+            const inputNum2 = document.getElementById('num2').value;
+
+            
+            const num1 = parseFloat(inputNum1);
+            const num2 = parseFloat(inputNum2);
+
+           
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('resultado').textContent = "Erro: Por favor, digite números válidos em ambos os campos.";
+                return;
+            }
+
+            
+            const resultadoSoma = num1 + num2;
+
+           
+            const pResultado = document.getElementById('resultado');
+            pResultado.textContent = `A soma de ${num1} + ${num2} é igual a: ${resultadoSoma}`;
+        }
+    </script>
+</body>
+</html>
