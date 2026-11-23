@@ -81,6 +81,12 @@ Python, Google Colab, PySpark, Pandas, Scikit-learn, Matplotlib, Seaborn, `unico
 - Separar o **estelionato digital** do presencial para testar a hipótese de migração do crime.
 - Testar **modelos de séries temporais** (como ARIMA) e comparar com outros municípios, como Niterói e Maricá.
 
+## Links, slides e roteiros
+
+Relatorio:file:///C:/Users/aluno/Desktop/Relatorio_Extensionista_Criminalidade_SG.pdf
+
+
+
 ## Autores
 
 **Leonardo Fernandes** e **João Gabriel Teixeira**  
