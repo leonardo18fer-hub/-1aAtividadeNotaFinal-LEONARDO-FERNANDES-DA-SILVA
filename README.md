@@ -83,7 +83,6 @@ Python, Google Colab, PySpark, Pandas, Scikit-learn, Matplotlib, Seaborn, `unico
 
 ## Links, slides e roteiros
 
-Relatorio:file:///C:/Users/aluno/Desktop/Relatorio_Extensionista_Criminalidade_SG.pdf
 colab:https://colab.research.google.com/drive/1cWPmEqlJMHucIkYBSckywNQNqbkSTEjg?usp=sharing
 
 ## Autores
